@@ -1,8 +1,7 @@
-let otherPrice = document.getElementById('price')
 let don = document.getElementById('don')
 let submit = document.getElementById('envoyer')
 var input = document.getElementsByTagName('input')
-let option= document.getElementsByTagName('option')
+let select= document.getElementsByTagName('select')
 
 don.addEventListener('change', (event)=>{
 
@@ -25,8 +24,8 @@ submit.addEventListener('click', () =>{
     })
 
     submit.addEventListener('click', () =>{
-        for (let y = 0; y<option.length; y++){
-            if(option[y].value == ""){
+        for (let y = 0; y<select.length; y++){
+            if(select[y].value == ""){
                 alert("Veuillez choisir au moins une cause");
                 return false;
             }
